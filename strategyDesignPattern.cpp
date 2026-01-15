@@ -1,4 +1,15 @@
 #include <iostream>
+
+
+//encapuslate what varies and keep it separate from what remains same
+/// solution to inheritance is not more inheritance
+// composiioton should be not more than inheritance
+/// composiioton should be used instead of inheritance
+// code to interface and not to concretion
+// Do not repeat yourself technique
+
+
+
 using namespace std;
 
 // --- Strategy Interface for Walk ---
