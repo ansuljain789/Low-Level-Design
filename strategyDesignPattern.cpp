@@ -1,11 +1,11 @@
 #include <iostream>
 
 
-//encapuslate what varies and keep it separate from what remains same
-/// solution to inheritance is not more inheritance
-// composiioton should be not more than inheritance
-/// composiioton should be used instead of inheritance
-// code to interface and not to concretion
+// Encapuslate what varies and keep it separate from what remains same
+// Solution to inheritance is not more inheritance
+// Composiioton should be not more than inheritance
+// Composiioton should be used instead of inheritance
+// Code to interface and not to concretion
 // Do not repeat yourself technique
 
 
@@ -33,7 +33,6 @@ public:
         cout << "Cannot walk." << endl; 
     }
 };
-
 
 // --- Strategy Interface for Talk ---
 class TalkableRobot {
@@ -129,13 +128,12 @@ public:
 // --- Main Function ---
 int main() {
     Robot *robot1 = new CompanionRobot(new NormalWalk(), new NormalTalk(), new NoFly());
+
     robot1->walk();
     robot1->talk();
     robot1->fly();
     robot1->projection();
-
     cout << "--------------------" << endl;
-
     Robot *robot2 = new WorkerRobot(new NoWalk(), new NoTalk(), new NormalFly());
     robot2->walk();
     robot2->talk();
