@@ -22,12 +22,14 @@ public:
         cout << "Sending SMS Notification: " << message << endl;
     }
 };
+
 class PushNotification : public Notification {
 public:
     void send(string message) override {
         cout << "Sending Push Notification: " << message << endl;
     }
 };
+
 class NotificationFactory {
 public:
     Notification* createNotification(string& type) {
