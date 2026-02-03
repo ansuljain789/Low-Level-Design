@@ -82,7 +82,7 @@ public:
 
 int main() {
     // Create a channel and subscribers
-    Channel* channel = new Channel("CoderArmy");
+    Channel* channel = new Channel("Google Developers Club");
 
     Subscriber* subs1 = new Subscriber("Varun", channel);
     Subscriber* subs2 = new Subscriber("Tarun", channel);
@@ -92,7 +92,7 @@ int main() {
     channel->subscribe(subs2);
 
     // Upload a video: both Varun and Tarun are notified
-    channel->uploadVideo("Observer Pattern Tutorial");
+    channel->uploadVideo("Observer Pattern");
 
     // Varun unsubscribes; Tarun remains subscribed
     channel->unsubscribe(subs1);
